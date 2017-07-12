@@ -12,7 +12,6 @@ RUN yum -y install perl perl-Data-Dumper glibc.i686 libgcc.i686 ncurses-libs.i68
 
 #setup non-root user
 RUN adduser axway
-RUN passwd axway
 RUN usermod -aG wheel axway
 
 EXPOSE 22
